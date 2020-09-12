@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>导出工具</title>
+</head>
+<body>
+<!--<form th:action="@{/gotoMessage}" method="post" class="form-horizontal" style="margin-left: 30%;margin-top: 15%;">-->
+    <!--<div class="form-group">-->
+        <!--<div class="col-sm-offset-2 col-sm-10" style="margin-top: 3%;margin-left: 16%;">-->
+            <!--<input class="btn btn-primary" type="submit" value="帖子" style="height: 40px;width: 80px;border-radius: 4px;color: chocolate"/>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</form>-->
+<form th:action="@{/gotoMember}" method="post" class="form-horizontal" style="margin-left: 30%;">
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10" style="margin-top: 3%;margin-left: 16%;">
+            <input class="btn btn-primary" type="submit" value="成员" style="height: 40px;width: 80px;border-radius: 4px;color: mediumseagreen"/>
+        </div>
+    </div>
+</form>
+<form th:action="@{/gotoMessageList}" method="post" class="form-horizontal" style="margin-left: 30%;">
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10" style="margin-top: 3%;margin-left: 16%;">
+            <input class="btn btn-primary" type="submit" value="所有帖子" style="height: 40px;width: 80px;border-radius: 4px;color: darkcyan"/>
+        </div>
+    </div>
+</form>
+</body>
+</html>

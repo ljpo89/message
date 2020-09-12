@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>导出所有帖子</title>
+</head>
+<body>
+<form th:action="@{/exportAllMessage}" method="post" class="form-horizontal" style="margin-left: 30%;margin-top: 15%;">
+    <div class="form-group">
+        <label for="address" class="col-sm-2 control-label" style="font-size: 36px;/*! font-style: ; */color: cadetblue;font-family: 宋体;">地址</label>
+        
+        <div class="col-xs-4">
+            <input type="text" class="form-control" id="address" name="address" style="height: 30px;width: 500px;"/>
+        </div>
+        <label for="phonebookId" class="col-sm-2 control-label" style="font-size: 36px;/*! font-style: ; */color: cadetblue;font-family: 宋体;">电话簿</label>
+        <div class="col-xs-4">
+            <input type="text" class="form-control" id="phonebookId" name="phonebookId" style="height: 30px;width: 500px;" placeholder="电话簿#电话簿"/>
+        </div>
+        <label for="offset" class="col-sm-2 control-label" style="font-size: 36px;/*! font-style: ; */color: cadetblue;font-family: 宋体;">导出起始偏移量</label>
+        <div class="col-xs-4">
+            <input type="text" class="form-control" id="offset" name="offset" style="height: 30px;width: 500px;"/>
+        </div>
+        <label for="count" class="col-sm-2 control-label" style="font-size: 36px;/*! font-style: ; */color: cadetblue;font-family: 宋体;">导出天数</label>
+        <div class="col-xs-4">
+            <input type="text" class="form-control" id="count" name="count" style="height: 30px;width: 500px;"/>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10" style="margin-top: 3%;margin-left: 16%;">
+            <input class="btn btn-primary" type="submit" value="提交" style="height: 40px;width: 80px;border-radius: 4px;"/>
+        </div>
+    </div>
+</form>
+</body>
+
+</html>
